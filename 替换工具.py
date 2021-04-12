@@ -24,7 +24,7 @@ class MainWindow(QFrame, Ui_Form):
         for t1, t2 in zip(t1_list[:count], t2_list[:count]):
             t3_list.append(t1.replace('*', t2))
 
-        self.textEdit_3.setText('\n'.join(t3_list))
+        self.textEdit_3.setPlainText('\n'.join(t3_list))
 
 
 if __name__ == '__main__':
